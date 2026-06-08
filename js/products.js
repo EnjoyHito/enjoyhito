@@ -12,20 +12,17 @@
  *     - category: "Hats" | "Apparel" | "Accessories"
  *     - price:    Number (e.g. 34.99)
  *     - image:    Path to your image file, or a full URL
- *     - buyLink:  The Printful product link (see HOW TO GET YOUR LINK below)
+ *     - buyLink:  The Printful product link
  *     - featured: true = shows on homepage, false = only on shop page
  *
  *  HOW TO GET YOUR PRINTFUL BUY LINK:
  *  1. Go to enjoyhito.printful.me in your browser
  *  2. Click any product
- *  3. Copy the URL — it will look like:
- *     https://enjoyhito.printful.me/product/product-name
- *  4. Paste it as the buyLink below
+ *  3. Copy the URL and paste it as buyLink below
  *
  *  HOW TO ADD A PRODUCT IMAGE:
  *  - Save your image inside the /images/ folder
- *  - Set image: "images/your-file.jpg"
- *  - Or paste a full URL: "https://..."
+ *  - Set image: "images/your-file.png"
  *
  * ============================================================
  */
@@ -36,7 +33,7 @@ const PRODUCTS = [
     name: "Trucker Cap",
     category: "Hats",
     price: "34.99",
-    image: "images/hat-1.jpg",
+    image: "images/hat-1-angle.png",
     buyLink: "https://enjoyhito.printful.me/product/trucker-cap",
     featured: true
   },
@@ -46,7 +43,7 @@ const PRODUCTS = [
     category: "Apparel",
     price: "29.99",
     image: "images/tee-1.jpg",
-    buyLink: "#",  // ✏️ Replace # with your Printful link
+    buyLink: "#",
     featured: true
   },
 
@@ -55,7 +52,7 @@ const PRODUCTS = [
     category: "Apparel",
     price: "59.99",
     image: "images/hoodie-1.jpg",
-    buyLink: "#",  // ✏️ Replace # with your Printful link
+    buyLink: "#",
     featured: true
   },
 
@@ -64,7 +61,7 @@ const PRODUCTS = [
     category: "Hats",
     price: "27.99",
     image: "images/hat-2.jpg",
-    buyLink: "#",  // ✏️ Replace # with your Printful link
+    buyLink: "#",
     featured: false
   },
 
@@ -73,7 +70,7 @@ const PRODUCTS = [
     category: "Accessories",
     price: "22.99",
     image: "images/tote-1.jpg",
-    buyLink: "#",  // ✏️ Replace # with your Printful link
+    buyLink: "#",
     featured: false
   },
 
@@ -82,7 +79,7 @@ const PRODUCTS = [
     category: "Apparel",
     price: "49.99",
     image: "images/crewneck-1.jpg",
-    buyLink: "#",  // ✏️ Replace # with your Printful link
+    buyLink: "#",
     featured: false
   }
 
