@@ -33,7 +33,7 @@ const PRODUCTS = [
     name: "Trucker Cap",
     category: "Hats",
     price: "34.99",
-    image: "images/hat-1-angle.png",
+    image: "images/sachi88_cap_blk_1.png",
     buyLink: "https://enjoyhito.printful.me/product/trucker-cap",
     featured: true
   },
