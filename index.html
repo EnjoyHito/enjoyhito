@@ -79,6 +79,130 @@
     </div>
   </section>
 
+  <!-- OUR STORES -->
+  <section class="section stores-section">
+    <div class="container">
+      <h2 class="section-title">Our Stores</h2>
+      <p class="section-sub">Each store has its own world. Find your vibe.</p>
+      <div class="stores-grid">
+
+        <!-- 305 LOVE — Hats — Coming Soon -->
+        <div class="store-card store-coming-soon">
+          <div class="store-card-inner">
+            <p class="store-number">01</p>
+            <h3 class="store-name">305 LOVE</h3>
+            <p class="store-theme">Hats</p>
+            <p class="store-desc">Headwear rooted in Miami culture. Bold, structured, and made to be noticed.</p>
+            <span class="store-btn-soon">Coming Soon</span>
+          </div>
+        </div>
+
+        <!-- IKIGAI — Apparel — Printful -->
+        <div class="store-card store-live">
+          <div class="store-card-inner">
+            <p class="store-number">02</p>
+            <h3 class="store-name">IKIGAI</h3>
+            <p class="store-theme">Apparel</p>
+            <p class="store-desc">Wear your purpose. Premium apparel designed for those who live with intention.</p>
+            <a href="https://enjoyhito.printful.me" target="_blank" class="store-btn-live">Shop Now →</a>
+          </div>
+        </div>
+
+        <!-- GOOD LUCK GOODS — Accessories — Redbubble -->
+        <div class="store-card store-live">
+          <div class="store-card-inner">
+            <p class="store-number">03</p>
+            <h3 class="store-name">GOOD LUCK GOODS</h3>
+            <p class="store-theme">Accessories</p>
+            <p class="store-desc">Everyday carry, elevated. Accessories that bring good energy wherever you go.</p>
+            <a href="https://www.redbubble.com/people/ENJOYhito/shop?asc=u" target="_blank" class="store-btn-live">Shop Now →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-logo">ENJOYHITO</p>
+      <p class="footer-tagline">Premium. Intentional. Yours.</p>
+      <div class="footer-links">
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">&copy; 2025 Enjoyhito. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script>
+    // Render featured products (first 3)
+    const grid = document.getElementById('featured-grid');
+    const featured = PRODUCTS.filter(p => p.featured).slice(0, 3);
+    featured.forEach(p => {
+      grid.innerHTML += `
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="${p.image}" alt="${p.name}" onerror="this.src='images/placeholder.jpg'" />
+          </div>
+          <div class="product-info">
+            <p class="product-cat">${p.category}</p>
+            <h3 class="product-name">${p.name}</h3>
+            <p class="product-price">$${p.price}</p>
+            <a href="${p.buyLink}" target="_blank" class="btn-primary btn-sm">Buy Now</a>
+          </div>
+        </div>`;
+    });
+  </script>
+</body>
+</html>  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Featured Pieces</h2>
+      <p class="section-sub">Each item is made-to-order and printed by our trusted fulfillment partner, Printful.</p>
+      <div class="product-grid" id="featured-grid">
+        <!-- Products are loaded from products.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- BRAND STATEMENT -->
+  <section class="brand-section">
+    <div class="brand-inner">
+      <p class="brand-quote">"Every piece tells a story.<br />Make it yours."</p>
+      <a href="about.html" class="btn-ghost">Our Story</a>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section section-light">
+    <div class="container">
+      <h2 class="section-title">How It Works</h2>
+      <div class="steps-grid">
+        <div class="step">
+          <span class="step-num">01</span>
+          <h3>Choose a Piece</h3>
+          <p>Browse our curated collection of hats, apparel, and accessories.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">02</span>
+          <h3>Place Your Order</h3>
+          <p>Secure checkout. Your order goes directly to our production team.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">03</span>
+          <h3>Made &amp; Shipped</h3>
+          <p>Printed on demand and shipped worldwide — quality guaranteed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
